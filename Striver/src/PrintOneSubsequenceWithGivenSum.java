@@ -3,7 +3,7 @@ import java.util.List;
 
 public class PrintOneSubsequenceWithGivenSum {
 
-    public static Boolean printAllSubsequenceWithGivenSum(int[] arr, int idx, int k, List<Integer> res, int sum){
+    public static Boolean printOneSubsequenceWithGivenSum(int[] arr, int idx, int k, List<Integer> res, int sum){
         if(idx >= arr.length){
             if(sum == k){
                 System.out.println(res);
@@ -14,11 +14,11 @@ public class PrintOneSubsequenceWithGivenSum {
 
         // incl
         res.add(arr[idx]);
-        if(printAllSubsequenceWithGivenSum(arr, idx + 1, k, res, sum + arr[idx])) return true;
+        if(printOneSubsequenceWithGivenSum(arr, idx + 1, k, res, sum + arr[idx])) return true;
         res.removeLast();
 
         //excl
-        if(printAllSubsequenceWithGivenSum(arr, idx + 1, k , res, sum)) return true;
+        if(printOneSubsequenceWithGivenSum(arr, idx + 1, k , res, sum)) return true;
 
         return false;
     }
@@ -27,6 +27,6 @@ public class PrintOneSubsequenceWithGivenSum {
         int[] arr = {1, 2, 3, 4};
         int k = 7;
 
-        printAllSubsequenceWithGivenSum(arr, 0, k, new ArrayList<>(), 0);
+        printOneSubsequenceWithGivenSum(arr, 0, k, new ArrayList<>(), 0);
     }
 }
