@@ -2,6 +2,7 @@ import java.util.Arrays;
 
 public class MergeSort {
 
+    //TC: O(nlogn)  SC: O(n)// Space Temp Arr
     public static void mergeSort(int[] arr, int start, int end){
         if(start < end){
             int mid = start + ((end - start) / 2);
