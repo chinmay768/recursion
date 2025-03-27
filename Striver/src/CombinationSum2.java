@@ -4,6 +4,8 @@ import java.util.List;
 
 public class CombinationSum2 {
 
+    //TC: O(2^n * k)   k = size of list
+    //SC: O(k * x)      x = no of lists
     public static List<List<Integer>> combinationSum2(int[] candidates, int target) {
         List<List<Integer>> result = new ArrayList<>();
         Arrays.sort(candidates);
