@@ -1,4 +1,6 @@
 import java.util.*;
+import java.util.stream.Collectors;
+
 public class Permutations {
 
     public static List<List<Integer>> permutations(int[] nums){
@@ -27,9 +29,36 @@ public class Permutations {
        }
     }
 
+    public static List<List<Integer>> permutations2(int[] nums){
+        List<List<Integer>> result = new ArrayList<>();
+        permutations2Helper(nums, result, 0);
+        return result;
+    }
+
+    public static void permutations2Helper(int[] nums, List<List<Integer>> result, int idx){
+        if(idx == nums.length){
+            List<Integer> list = Arrays.stream(nums)
+                    .boxed()
+                    .toList();
+            result.add(new ArrayList<>(list));
+        }
+
+        for(int i = idx; i < nums.length; i++){
+            swap(nums, idx, i);
+            permutations2Helper(nums, result, idx + 1);
+            swap(nums, idx, i);
+        }
+    }
+
+    private static void swap(int[] arr, int i, int j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+
     public static void main(String[] args) {
         int[] nums = {1,2,3};
 
-        System.out.println(permutations(nums));
+        System.out.println(permutations2(nums));
     }
 }
