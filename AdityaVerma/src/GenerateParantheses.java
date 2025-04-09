@@ -1,6 +1,8 @@
 import java.util.*;
 public class GenerateParantheses {
 
+    //TC: O(2^n * n)
+    //SC: O(2n * k) k is no of valid strings
     public static List<String> generateParenthesis(int n) {
         List<String> ans = new ArrayList<>();
         generate(n,0, 0, new StringBuilder(), ans);
