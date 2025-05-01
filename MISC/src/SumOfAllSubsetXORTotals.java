@@ -43,7 +43,6 @@ public class SumOfAllSubsetXORTotals {
         if(idx == nums.length) return xor;
 
         int include = helper(nums, idx + 1, nums[idx] ^ xor);
-        int include = helper(nums, idx + 1, nums[idx] ^ xor);
         int exclude = helper(nums, idx + 1, xor);
 
         return include + exclude;
