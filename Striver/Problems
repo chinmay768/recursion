@@ -1,0 +1,60 @@
+Q1: Merge Sort
+
+Q2: Quick Sort
+
+Q3: Combination Sum
+Given an array of distinct integers candidates and a target integer target,
+return a list of all unique combinations of candidates where the chosen numbers sum to target.
+ You may return the combinations in any order.
+
+The same number may be chosen from candidates an unlimited number of times.
+Two combinations are unique if the frequency of at least one of the chosen numbers is different.
+
+
+Q4: Combination Sum 2
+Given a collection of candidate numbers (candidates) and a target number (target),
+find all unique combinations in candidates where the candidate numbers sum to target.
+Each number in candidates may only be used once in the combination.
+
+Note: The solution set must not contain duplicate combinations.
+
+Q5: Subset Sums
+Given a array arr of integers, return the sums of all subsets in the list.
+Return the sums in increasing order.
+
+Q6: Subset Sum 2 || 90 Subsets 2
+
+Given an integer array nums that may contain duplicates, return all possible subsets (the power set).
+
+The solution set must not contain duplicate subsets. Return the solution in any order.
+
+
+Q7: Print all permutations of a string/array || 46 Permutations
+Given an array nums of distinct integers, return all the possible permutations.
+You can return the answer in any order.
+
+
+Q8: N Queens
+The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other.
+
+Given an integer n, return all distinct solutions to the n-queens puzzle. You may return the answer in any order.
+
+Each solution contains a distinct board configuration of the n-queens' placement,
+where 'Q' and '.' both indicate a queen and an empty space, respectively.
+
+Q9: Sudoku Solver
+
+Write a program to solve a Sudoku puzzle by filling the empty cells.
+
+A sudoku solution must satisfy all of the following rules:
+
+Each of the digits 1-9 must occur exactly once in each row.
+Each of the digits 1-9 must occur exactly once in each column.
+Each of the digits 1-9 must occur exactly once in each of the 9 3x3 sub-boxes of the grid.
+The '.' character indicates empty cells.
+
+
+Q10: Palindrome Partitioning
+
+Given a string s, partition s such that every substring of the partition is a palindrome.
+Return all possible palindrome partitioning of s.
