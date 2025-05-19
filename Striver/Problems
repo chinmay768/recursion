@@ -58,3 +58,47 @@ Q10: Palindrome Partitioning
 
 Given a string s, partition s such that every substring of the partition is a palindrome.
 Return all possible palindrome partitioning of s.
+
+Q11: Rat in a Maze
+Given a grid of dimensions n x n. A rat is placed at coordinates (0, 0) and wants to reach at coordinates (n-1, n-1).
+
+Find all possible paths that rat can take to travel from (0, 0) to (n-1, n-1).
+The directions in which rat can move are 'U' (up) , 'D' (down) , 'L' (left) , 'R' (right).
+
+The value 0 in grid denotes that the cell is blocked and rat cannot use that cell for travelling,
+whereas value 1 represents that rat can travel through the cell.
+If the cell (0, 0) has 0 value, then mouse cannot move to any other cell.
+
+
+Q12: Kth Permutation  / 60. Permutation Sequence
+The set [1, 2, 3, ..., n] contains a total of n! unique permutations.
+
+By listing and labeling all of the permutations in order, we get the following sequence for n = 3:
+
+"123"
+"132"
+"213"
+"231"
+"312"
+"321"
+Given n and k, return the kth permutation sequence.
+
+Q: Count Good Numbers  / 1922. Count Good Numbers
+
+A digit string is good if the digits (0-indexed) at even indices are even and the digits at odd indices are prime (2, 3, 5, or 7).
+
+For example, "2582" is good because the digits (2 and 8) at even positions are even and the digits (5 and 2) at odd positions are prime.
+However, "3245" is not good because 3 is at an even index but is not even.
+Given an integer n, return the total number of good digit strings of length n.
+Since the answer may be large, return it modulo 109 + 7.
+
+A digit string is a string consisting of digits 0 through 9 that may contain leading zeros.
+
+
+Q: Combination Sum 3
+Find all valid combinations of k numbers that sum up to n such that the following conditions are true:
+
+Only numbers 1 through 9 are used.
+Each number is used at most once.
+Return a list of all possible valid combinations. The list must not contain the same combination twice,
+and the combinations may be returned in any order.
